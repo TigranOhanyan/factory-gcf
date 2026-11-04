@@ -2,7 +2,7 @@
 # in the factory repo. Actions runs it there.
 #
 # GH_GCF_VERSION is the pin passed to `gh extension install --pin`.
-# Bind replaces v0.5.0 with the release tag of the binary that runs it.
+# Bind replaces v0.5.1 with the release tag of the binary that runs it.
 # The tick checks out main and state, sets the Actions bot as the git author, installs gh-gcf, records a tick, prints its id, and pushes state.
 # The runner has no git author. The bot is github-actions[bot], the account GITHUB_TOKEN pushes as.
 # CURSOR_API_KEY is available for later steps. It is never printed.
@@ -12,7 +12,7 @@
 name: Factory Tick
 
 env:
-  GH_GCF_VERSION: v0.5.0
+  GH_GCF_VERSION: v0.5.1
 
 on:
   schedule:
